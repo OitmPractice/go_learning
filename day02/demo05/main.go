@@ -78,4 +78,8 @@ func main() {
 	str9 := strings.Trim(str8, "o")
 	fmt.Println(str9)
 
+	//string切片处理
+	slice := str9[4:]
+	fmt.Println(slice)
+
 }
