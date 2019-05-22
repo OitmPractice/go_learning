@@ -30,4 +30,10 @@ func main() {
 	if ok {
 		fmt.Println(val)
 	}
+
+	//map遍历
+	for k, v := range map3 {
+		fmt.Println(k, v)
+
+	}
 }

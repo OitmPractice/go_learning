@@ -8,7 +8,10 @@ import (
 func main() {
 	var i int = 100
 	var n1 float32 = float32(i)
-	fmt.Printf("i = %v   n1=%v", i, n1)
+	fmt.Printf("i = %v   n1=%v \n", i, n1)
+
+	tempStr := string(i)
+	fmt.Println("tempStr = ", tempStr) //tempStr =  d
 
 	//基本数据类型和string之间的转换
 	var num1 int = 100
@@ -38,5 +41,4 @@ func main() {
 	boo, _ := strconv.ParseBool(str)
 	fmt.Println(boo)
 
-	
 }
