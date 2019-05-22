@@ -24,6 +24,7 @@ func main() {
 		fmt.Println(err)
 	} else {
 		fmt.Println(n)
+		fmt.Printf("%T\n", n)
 	}
 	str3 := strconv.Itoa(12345)
 	fmt.Printf("str3 = %v, type = %T \n", str3, str3)
