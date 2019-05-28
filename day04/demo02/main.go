@@ -18,4 +18,5 @@ func main() {
 	//序列化结构体为json字符串
 	jsonByte, _ := json.Marshal(monster)
 	fmt.Println(string(jsonByte))
-}、
+
+}
