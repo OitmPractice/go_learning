@@ -31,4 +31,12 @@ func main() {
 	fmt.Println(g.Student.Name)
 	fmt.Println(g.Pupil.Name)
 
+	person := model.Total{}
+	person.Person.Name = "oitm"
+
+	person.P.Weight = 10
+	person.A = 100
+
+	fmt.Println(person)
+
 }

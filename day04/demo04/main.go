@@ -19,5 +19,4 @@ func main() {
 		age:  18,
 	}
 	fmt.Println(stu.say())
-
 }
