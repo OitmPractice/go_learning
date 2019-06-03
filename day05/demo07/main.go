@@ -26,7 +26,6 @@ func test() {
 	fmt.Printf("newCat type = %T, value = %v \n", newCat, newCat)
 	cat2 := newCat.(Cat)
 	fmt.Println(cat2.Name)
-
 }
 
 type Cat struct {

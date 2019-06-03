@@ -8,20 +8,18 @@ import (
 
 var (
 	myMap = make(map[int]int, 10)
-
 	// 互斥锁
 	lock sync.Mutex
 )
 
 func main() {
-
 	//获取CPU数目
 	fmt.Println(runtime.NumCPU())
 
 	//会报错  并发修改map  两种方法
 	//1、使用互斥锁解决
 	//2、使用goroutine
-	for i := 0; i <= 200; i++ {
+	for i := 0; i <= 20; i++ {
 		go test(i)
 	}
 
