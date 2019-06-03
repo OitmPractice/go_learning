@@ -82,5 +82,4 @@ func testUnMarshalStructAndMap() {
 		fmt.Println(err)
 	}
 	fmt.Printf("params == %v \n", params["name"])
-
 }
