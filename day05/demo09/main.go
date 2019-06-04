@@ -17,9 +17,8 @@ func main() {
 
 	go func() {
 		for i := 0; i < channelCount; i++ {
-			fmt.Println("停在这里了————————————————————————")
+			//这里会阻塞
 			<-exitChan
-			fmt.Println("经过这里了++++++++++++++++++++++++")
 		}
 		close(primeChan)
 		close(exitChan)
@@ -33,6 +32,8 @@ func main() {
 		fmt.Printf("素数=%d\n", res)
 	}
 }
+
+
 
 //存入1-8000的数
 func putNum(intChan chan int) {
