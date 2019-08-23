@@ -15,7 +15,6 @@ func (this *Queue) AddQueue(val int) (err error) {
 	}
 	this.rear++
 	this.array[this.rear] = val
-
 	return
 }
 

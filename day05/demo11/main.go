@@ -37,7 +37,6 @@ func testRedisPool() {
 		return
 	}
 	fmt.Println(v)
-
 }
 
 func testHash() {
